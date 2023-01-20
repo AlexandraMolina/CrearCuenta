@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script async defer src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.google.com/specimen/Nunito:wght@500&display=swap" rel="stylesheet">
+    <title>Create Account</title>
+</head>
+
+<body>
+
+<div>
+    <form>
+        <h1>Create Account</h1>
+        <div class="datos">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" value="" id="name" class="dato">
+            <span id="error_nombre"></span>
+        </div>
+
+        <div class="datos">
+            <label for="correo">Email</label>
+            <input type="email" name="email" value="" id="email" class="dato">
+            <span id="error_correo"></span>
+        </div>
+
+        <div class="datos">
+            <label for="clave">Clave</label>
+            <input type="password" name="password" value="" id="pass" class="dato">
+            <span id="error_pass"></span>
+        </div>
+
+
+        <div class="datos">
+            <label for="confirm_clave">Confirme su clave</label>
+            <input type="password" name="confirmar" value="" id="conf" class="dato">
+            <span id="error_confclave"></span>
+        </div>
+
+        <input type="submit" value="Enviar", id="boton" onclick="return validarNombre(), validarCorreo(),validarPass(),validarConClave(),validarFormulario()" onmouseover="boton()"\>
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+
+</html>
+
+
+
+
+
